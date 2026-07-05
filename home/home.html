@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | TaskTogether</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="home-body">
+
+    <header class="topo">
+        <div>
+            <h1>TaskTogether</h1>
+            <p>Lista colaborativa de tarefas</p>
+        </div>
+
+        <a href="/login/login.html" class="btn-sair">Sair</a>
+    </header>
+
+    <main class="home-container">
+
+        <section class="boas-vindas">
+            <h2 id="nomeUsuario">Olá 👋</h2>
+            <p>Organize suas tarefas e acompanhe o que seus colaboradores estão fazendo.</p>
+        </section>
+
+        <section class="area-tarefas">
+
+            <div class="card-tarefa formulario-tarefa">
+                <h3>Adicionar nova tarefa</h3>
+
+                <form>
+                    <input type="text" placeholder="Digite o título da tarefa" required>
+
+                    <textarea placeholder="Descrição da tarefa"></textarea>
+
+                    <select required>
+                        <option value="">Selecionar responsável</option>
+                        <option>Pedro</option>
+                        <option>Colaborador</option>
+                    </select>
+
+                    <button type="submit">Adicionar tarefa</button>
+                </form>
+            </div>
+
+            <div class="card-tarefa">
+                <h3>Minhas tarefas</h3>
+
+                <div class="item-tarefa">
+                    <div>
+                        <h4>Criar página de login</h4>
+                        <p>Status: em andamento</p>
+                    </div>
+                    <span class="tag andamento">Andamento</span>
+                </div>
+
+                <div class="item-tarefa">
+                    <div>
+                        <h4>Montar tela inicial</h4>
+                        <p>Status: pendente</p>
+                    </div>
+                    <span class="tag pendente">Pendente</span>
+                </div>
+            </div>
+
+            <div class="card-tarefa">
+                <h3>Tarefas compartilhadas</h3>
+
+                <div class="item-tarefa">
+                    <div>
+                        <h4>Criar sistema de cadastro</h4>
+                        <p>Responsável: Colaborador</p>
+                    </div>
+                    <span class="tag andamento">Andamento</span>
+                </div>
+
+                <div class="item-tarefa">
+                    <div>
+                        <h4>Conectar com Python</h4>
+                        <p>Responsável: Pedro</p>
+                    </div>
+                    <span class="tag pendente">Pendente</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="home.js"></script>
+</body>
+</html>
