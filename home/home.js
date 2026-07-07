@@ -18,3 +18,21 @@ botaoSair.addEventListener("click", function (event) {
 
     window.location.href = "../login/login.html";
 });
+    /*add task*/
+const form = document.getElementById("taskForm");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const titulo = document.getElementById("titulo").value;
+    const descricao = document.getElementById("descricao").value;
+    const responsavel = document.getElementById("responsavel").value;
+
+    console.log({
+        titulo,
+        descricao,
+        responsavel
+    });
+
+    // Depois vocês enviam para o backend
+});
