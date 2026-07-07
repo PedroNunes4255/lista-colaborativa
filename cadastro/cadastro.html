@@ -15,7 +15,7 @@
                 <p>Comece a organizar tarefas com outras pessoas</p>
             </div>
 
-            <form class="form" action="../home/home.html" method="get">
+            <form class="form" id="form-cadastro">
                 <div class="campo">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
@@ -36,6 +36,7 @@
                     <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
                 </div>
 
+                <p id="mensagem" class="mensagem"></p>
                 <button type="submit">Cadastrar</button>
             </form>
 
@@ -46,5 +47,6 @@
         </section>
     </main>
 
+    <script src="cadastro_salvo.js"></script>
 </body>
 </html>

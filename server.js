@@ -36,6 +36,8 @@ app.get("/", (req, res) => {
 });
 
 app.post("/api/cadastro", async (req, res) => {
+    console.log("Cadastro recebido:", req.body);
+
     const { nome, email, senha, confirmar_senha } = req.body;
 
     if (!nome || !email || !senha || !confirmar_senha) {
@@ -70,6 +72,8 @@ app.post("/api/cadastro", async (req, res) => {
 });
 
 app.post("/api/login", async (req, res) => {
+    console.log("Login recebido:", req.body);
+    
     const { email, senha } = req.body;
 
     if (!email || !senha) {

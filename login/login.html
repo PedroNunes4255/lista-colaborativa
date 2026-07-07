@@ -15,7 +15,7 @@
                 <p>Entre para acessar suas listas colaborativas</p>
             </div>
 
-            <form class="form" action="../home/home.html" method="get">
+            <form class="form" id="form-login">
                 <div class="campo">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
@@ -26,6 +26,7 @@
                     <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
                 </div>
 
+                <p id="mensagem" class="mensagem"></p>
                 <button type="submit">Entrar</button>
             </form>
 
@@ -36,5 +37,6 @@
         </section>
     </main>
 
+    <script src="verify_pass.js"></script>
 </body>
 </html>
