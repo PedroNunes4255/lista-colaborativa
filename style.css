@@ -317,3 +317,25 @@ button:hover {
 .mensagem.sucesso {
     color: #16a34a;
 }
+.tag.concluida {
+    background-color: #d4f4dd;
+    color: #1e7e34;
+}
+ 
+.btn-excluir-tarefa {
+    background: none;
+    border: none;
+    color: #a33;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+ 
+.btn-excluir-tarefa:hover {
+    color: #d00;
+}
+ 
+.lista-vazia {
+    color: #888;
+    font-style: italic;
+}
+ 
